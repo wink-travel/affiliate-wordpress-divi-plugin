@@ -1,9 +1,9 @@
-# Copyright (C) 2021 iko.travel
+# Copyright (C) 2021 Wink
 # This file is distributed under the GPL2.
 msgid ""
 msgstr ""
-"Project-Id-Version: iko.travel for Divi 1.0.3\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/iko-travel-divi\n"
+"Project-Id-Version: Wink for Divi 1.0.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wink-divi\n"
 "POT-Creation-Date: 2021-12-30 14:40:44+00:00\n"
 "PO-Revision-Date: 2021-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -24,13 +24,13 @@ msgstr ""
 "X-Textdomain-Support: yes\n"
 "X-Generator: grunt-wp-i18n1.0.2\n"
 
-#: iko-travel-divi.php:50
+#: wink-divi.php:50
 msgid "Warning"
 msgstr ""
 
-#: iko-travel-divi.php:52
+#: wink-divi.php:52
 msgid ""
-"the iko.travel - Divi Integration requires the iko.travel Affiliate "
+"the Wink - Divi Integration requires the Wink Affiliate "
 "WordPress plugin to be enabled"
 msgstr ""
 
@@ -85,18 +85,18 @@ msgid "iko Search"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "iko.travel for Divi"
+msgid "Wink for Divi"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "https://iko.travel/"
+msgid "https://wink.travel/"
 msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"This extension connects Divi with the iko.travel Affiliate WordPress plugin."
+"This extension connects Divi with the Wink Affiliate WordPress plugin."
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "iko.travel"
+msgid "Wink"
 msgstr ""

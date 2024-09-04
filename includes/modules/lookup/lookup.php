@@ -6,9 +6,9 @@ class IKTDLookup extends ET_Builder_Module {
 	public $vb_support = 'on';
 
 	protected $module_credits = array(
-		'module_uri' => 'https://iko.travel/',
-		'author'     => 'iko.travel',
-		'author_uri' => 'https://iko.travel/',
+		'module_uri' => 'https://wink.travel/',
+		'author'     => 'Wink',
+		'author_uri' => 'https://wink.travel/',
 	);
 
 	public function init() {

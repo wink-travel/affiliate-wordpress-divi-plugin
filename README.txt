@@ -1,4 +1,4 @@
-=== iko.travel for Divi ===
+=== Wink for Divi ===
 Contributors: MB-Jan, ikotravel
 Tags: travel, iko, booking
 Requires at least: 4.7
@@ -10,11 +10,11 @@ Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Integrates Divi with the iko.travel Affiliate WordPress plugin.
+Integrates Divi with the Wink Affiliate WordPress plugin.
 
 == Description ==
 
-This plugin makes adding iko.travel Affiliate web components a breeze with Divi. Simply install and activate it next to the official iko.travel WordPress plugin and get started.
+This plugin makes adding Wink Affiliate web components a breeze with Divi. Simply install and activate it next to the official Wink WordPress plugin and get started.
 
 == Frequently Asked Questions ==
 

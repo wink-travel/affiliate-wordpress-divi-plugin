@@ -1,6 +1,6 @@
 <?php
 
-class IKTD_IkoTravelDivi extends DiviExtension {
+class IKTD_WinkDivi extends DiviExtension {
 
 	/**
 	 * The gettext domain for the extension's translations.
@@ -9,7 +9,7 @@ class IKTD_IkoTravelDivi extends DiviExtension {
 	 *
 	 * @var string
 	 */
-	public $gettext_domain = 'iktd-iko-travel-divi';
+	public $gettext_domain = 'wink-divi';
 
 	/**
 	 * The extension's WP Plugin name.
@@ -18,7 +18,7 @@ class IKTD_IkoTravelDivi extends DiviExtension {
 	 *
 	 * @var string
 	 */
-	public $name = 'iko-travel-divi';
+	public $name = 'wink-divi';
 
 	/**
 	 * The extension's version
@@ -30,12 +30,12 @@ class IKTD_IkoTravelDivi extends DiviExtension {
 	public $version = '1.0.3';
 
 	/**
-	 * IKTD_IkoTravelDivi constructor.
+	 * IKTD_WinkDivi constructor.
 	 *
 	 * @param string $name
 	 * @param array  $args
 	 */
-	public function __construct( $name = 'iko-travel-divi', $args = array() ) {
+	public function __construct( $name = 'wink-divi', $args = array() ) {
 		$this->plugin_dir     = plugin_dir_path( __FILE__ );
 		$this->plugin_dir_url = plugin_dir_url( $this->plugin_dir );
 
@@ -43,4 +43,4 @@ class IKTD_IkoTravelDivi extends DiviExtension {
 	}
 }
 
-new IKTD_IkoTravelDivi;
+new IKTD_WinkDivi;
