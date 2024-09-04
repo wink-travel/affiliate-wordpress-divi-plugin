@@ -35,7 +35,7 @@ msgid ""
 msgstr ""
 
 #: includes/modules/account/account.php:15
-msgid "iko Account"
+msgid "wink Account"
 msgstr ""
 
 #: includes/modules/account/account.php:28
@@ -51,11 +51,11 @@ msgstr ""
 #: includes/modules/lookup/lookup.php:31 includes/modules/search/search.php:31
 msgid ""
 "Simply ensure that you have entered the correct Client-ID and Client-Secret "
-"in the iko plugin settings."
+"in the wink plugin settings."
 msgstr ""
 
 #: includes/modules/content/content.php:15
-msgid "iko Content"
+msgid "wink Content"
 msgstr ""
 
 #: includes/modules/content/content.php:36
@@ -69,19 +69,19 @@ msgid ""
 msgstr ""
 
 #: includes/modules/itinerary/itinerary.php:15
-msgid "iko Itinerary"
+msgid "wink Itinerary"
 msgstr ""
 
 #: includes/modules/itineraryform/itineraryform.php:15
-msgid "iko Itinerary Form"
+msgid "wink Itinerary Form"
 msgstr ""
 
 #: includes/modules/lookup/lookup.php:15
-msgid "iko Lookup"
+msgid "wink Lookup"
 msgstr ""
 
 #: includes/modules/search/search.php:15
-msgid "iko Search"
+msgid "wink Search"
 msgstr ""
 
 #. Plugin Name of the plugin/theme

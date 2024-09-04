@@ -33,7 +33,7 @@ if ( ! function_exists( 'iktd_initialize_extension' ) ):
  * @since 1.0.0
  */
 function iktd_initialize_extension() {
-	if (class_exists('ikoTravelElements')) {
+	if (class_exists('winkTravelElements')) {
 		require_once plugin_dir_path( __FILE__ ) . 'includes/WinkDivi.php';
 	} else {
 		
@@ -41,11 +41,11 @@ function iktd_initialize_extension() {
 }
 add_action( 'divi_extensions_init', 'iktd_initialize_extension' );
 
-add_action('admin_notices', 'ikoDiviAdminNotice' );
-function ikoDiviAdminNotice() {
-	if (is_admin() && !class_exists('ikoTravelElements')) {
+add_action('admin_notices', 'winkDiviAdminNotice' );
+function winkDiviAdminNotice() {
+	if (is_admin() && !class_exists('winkTravelElements')) {
 		if ( current_user_can( 'manage_options' ) ) { // let's only show this to admin users
-			$namespace = 'iko-travel';
+			$namespace = 'wink-travel';
 			echo '<div class="notice notice-info"><p><b>'.
 			__('Warning', $namespace).
 			'!</b> '.

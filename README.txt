@@ -1,6 +1,6 @@
 === Wink for Divi ===
-Contributors: MB-Jan, ikotravel
-Tags: travel, iko, booking
+Contributors: MB-Jan, winktravel
+Tags: travel, wink, booking
 Requires at least: 4.7
 Tested up to: 6.0
 Stable tag: 1.2.10

@@ -7,7 +7,7 @@
 echo "Disabling git messages for a release"
 export GIT_MERGE_AUTOEDIT=no
 
-echo "Releasing new version of iko-travel-affiliate WordPress plugin with git flow..."
+echo "Releasing new version of wink-travel-affiliate WordPress plugin with git flow..."
 echo "Enter version number. E.g. 1.2.3";
 
 read versionNumber

@@ -1,7 +1,7 @@
 <?php
 
 class IKTDLookup extends ET_Builder_Module {
-	protected $namespace = 'iko-travel';
+	protected $namespace = 'wink-travel';
 	public $slug       = 'iktd_lookup';
 	public $vb_support = 'on';
 
@@ -12,11 +12,11 @@ class IKTDLookup extends ET_Builder_Module {
 	);
 
 	public function init() {
-		$this->name = esc_html__( 'iko Lookup', $this->namespace );
+		$this->name = esc_html__( 'wink Lookup', $this->namespace );
 		$this->settings_modal_toggles  = array(
-			'iko' => array(
+			'wink' => array(
 				'toggles' => array(
-					'ikoOptions'   => esc_html( 'iko Settings', $this->namespace )
+					'winkOptions'   => esc_html( 'wink Settings', $this->namespace )
 				),
 			),
 		);
@@ -28,14 +28,14 @@ class IKTDLookup extends ET_Builder_Module {
 				'label'           => __( "This component does not require any configuration.", $this->namespace ),
 				'type'            => 'iktd_input',
 				'option_category' => 'basic_option',
-				'description'     => __( "Simply ensure that you have entered the correct Client-ID and Client-Secret in the iko plugin settings.", $this->namespace ),
-				'toggle_slug'     => 'ikoOptions',
+				'description'     => __( "Simply ensure that you have entered the correct Client-ID and Client-Secret in the wink plugin settings.", $this->namespace ),
+				'toggle_slug'     => 'winkOptions',
 			),
 		);
 	}
 
 	public function render( $attrs, $content = null, $render_slug ) {
-		return do_shortcode('[ikolookup]');
+		return do_shortcode('[winklookup]');
 	}
 }
 
