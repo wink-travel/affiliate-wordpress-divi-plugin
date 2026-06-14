@@ -17,7 +17,7 @@ git cliff --unreleased --tag $versionNumber --sort newest --prepend CHANGELOG.md
 versionNumber="v${versionNumber}";
 
 echo "Committing version changes for $versionNumber"
-git commit -a -m "build: bookmark: merge to master
+git commit -a -m "build: bookmark: merge to master [no ci]
 
 Version bump to $versionNumber registered
 
@@ -29,8 +29,14 @@ git push --follow-tags origin develop
 echo "Calling 'git flow release $versionNumber'"
 git flow release start $versionNumber
 
+# Ensure git-flow merge/back-merge commits are skipped by CI, independent of any
+# machine-specific global git config. git-flow-next exposes no CLI flag for the
+# back-merge message, so the only portable way to tag it [no ci] is local config.
+git config --local gitflow.release.finish.mergemessage  "chore: merge %b into %p [no ci]"
+git config --local gitflow.release.finish.updatemessage "chore: sync %b from %p [no ci]"
+
 echo "Calling 'git flow finish -m $versionNumber $versionNumber'"
-git flow release finish -m $versionNumber $versionNumber
+git flow release finish -m "$versionNumber [no ci]" $versionNumber
 
 echo "Checking out master..."
 git checkout master
