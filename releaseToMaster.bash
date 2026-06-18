@@ -40,6 +40,12 @@ else
   exit 1
 fi
 
+# --- release hardening: never let an ambient pull.rebase=true / pull.ff turn a
+# sync-pull into a history-rewriting rebase or surprise merge. Pin every pull to
+# fast-forward-only so a diverged shared branch FAILS LOUDLY instead of silently
+# rebasing a just-finished release onto origin. Overrides personal git config. ---
+git config --local pull.ff only
+git config --local pull.rebase false
 git cliff --unreleased --tag $versionNumber --sort newest --prepend CHANGELOG.md
 
 versionNumber="v${versionNumber}";
@@ -70,7 +76,7 @@ echo "Checking out master..."
 git checkout master
 
 echo "Pulling ORIGIN master into local branch..."
-git pull origin
+git pull --ff-only origin
 
 echo "Pushing master (+ tags) to ORIGIN..."
 git push
@@ -80,7 +86,7 @@ echo "Checking out local develop branch..."
 git checkout develop
 
 echo "Pulling ORIGIN develop into local branch..."
-git pull origin
+git pull --ff-only origin
 
 echo "Pushing develop to ORIGIN..."
 git push
