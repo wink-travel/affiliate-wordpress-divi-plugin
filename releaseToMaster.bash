@@ -88,6 +88,10 @@ git checkout develop
 echo "Pulling ORIGIN develop into local branch..."
 git pull --ff-only origin
 
+# git-flow ignores gitflow.release.finish.updatemessage on some versions and falls back to the
+# default "Merge branch 'master' into develop" — amend here, before push, so Bamboo skips it.
+git commit --amend -m "chore: sync master into develop [no ci]"
+
 echo "Pushing develop to ORIGIN..."
 git push
 
